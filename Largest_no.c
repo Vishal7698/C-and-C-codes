@@ -1,0 +1,38 @@
+#include<stdio.h>
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Name:Maximum
+//Input:Integer
+//Output:Integer
+//Author:Shraddha
+//Date:3/9/19
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+int Maximum(
+		int iNo1,int iNo2
+	   )
+
+	   {	
+		if(iNo1>iNo2)
+		{
+			return iNo1;
+		}
+		else
+		{
+			return iNo2;
+		}
+	   }
+
+int main()
+{
+	int iValue1=0,iValue2=0;
+	int iRet=0;
+	
+	printf("Enter 2 Numbers:\n");
+	scanf("%d %d",&iValue1,&iValue2);
+	
+	iRet=Maximum(iValue1,iValue2);
+	printf("\nLargest number is:%d\n",iRet);
+	
+	return 0;
+}
+	
